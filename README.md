@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/skoskr/Single-price-grid-component-solution)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://wonderful-tiramisu-45969c.netlify.app)
 
 ## My process
 
