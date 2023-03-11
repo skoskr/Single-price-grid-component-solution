@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --karla: 'Karla', sans-serif;
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    font-size: 16px;
+    background-color: var(--light-gray);
+    font-family: var(--karla);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 650px;
+}
+
+.column1 {
+    background-color: white;
+    padding: 40px 30px;
+}
+
+.column2 {
+    background-color: var(--cyan);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 275px;
+}
+
+.pay {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.price {
+    font-size: 28px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.time {
+    opacity: 0.5;
+}
+
+button {
+    color: white;
+    height: 50px;
+    width: 100%;
+    background-color: var(--bright-yellow);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+    margin-top: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+
+.whyus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(179, 60%, 50%);
+    padding: 30px;
+}
+
+.whyus-content {
+    color: var(--light-gray);
+    list-style-type: none;
+    line-height: 22px;
+}
+
+.first-title{
+    color: var(--cyan);
+    font-weight: 700;
+}
+
+.description-title {
+    color: var(--bright-yellow);
+    font-weight: 700;
+    margin: 24px 0 12px 0;
+}
+
+.description {
+    color: var(--grayish-blue);
+    line-height: 28px;
+    letter-spacing: 0.1px;
+}
+
+@media (max-width: 520px) {
+    body {
+        padding: 35px;
+    }
+    
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr;
+}
+
+    .description-title {
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+
+    .column2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        height: auto;
+    }
+
+    .whyus-title {
+        margin-bottom: 15px;
+    }
+}
